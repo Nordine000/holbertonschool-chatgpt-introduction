@@ -1,13 +1,12 @@
-#!/usr/bin/python3 
+#!/usr/bin/python3
+import sys
 
-import sys 
+def factorial(n):
+    result = 1
+    while n > 1:
+        result *= n
+        n -= 1 # Reduce n to terminate the loop
+    return result
 
-    def factorial(n): 
-        result = 1 
-        while n > 1: 
-            result *= n 
-            n -= 1 
-        return result 
-
-f = factorial(int(sys.argv[1])) 
-        print(f)
+f = factorial(int(sys.argv[1]))
+print(f)
